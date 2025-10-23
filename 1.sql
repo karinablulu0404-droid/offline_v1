@@ -1,0 +1,33 @@
+
+--日志表  ods_log_inc;
+--活动信息表（全量表） ods_activity_info_full
+
+--活动规则表（全量表）ods_activity_rule_full
+--一级品类表（全量表）ods_base_category1_full
+--二级品类表（全量表） ods_base_category2_full
+--三级品类表（全量表）ods_base_category3_full
+--编码字典表（全量表） ods_base_dic_full
+--省份表（全量表） ods_base_province_full
+--地区表（全量表） ods_base_region_full
+--品牌表（全量表）ods_base_trademark_full
+--购物车表（全量表）ods_cart_info_full
+-- 优惠券信息表（全量表）ods_coupon_info_full
+-- 商品平台属性表（全量表） ods_sku_attr_value_full
+-- 商品表（全量表）ods_sku_info_full
+-- 商品销售属性值表（全量表）ods_sku_sale_attr_value_full
+-- SPU表（全量表）ods_spu_info_full
+-- 营销坑位表（全量表）ods_promotion_pos_full
+-- 营销渠道表（全量表）ods_promotion_refer_full
+-- 购物车表（增量表） ods_cart_info_inc
+-- 评论表（增量表） ods_comment_info_inc
+-- 优惠券领用表（增量表） ods_coupon_use_inc
+-- 收藏表（增量表） ods_favor_info_inc
+-- 订单明细表（增量表）ods_order_detail_inc
+-- 订单明细活动关联表（增量表）ods_order_detail_activity_inc
+-- 订单明细优惠券关联表（增量表） ods_order_detail_coupon_inc
+-- 订单表（增量表） ods_order_info_inc
+-- 退单表（增量表）ods_order_refund_info_inc
+-- 订单状态流水表（增量表） ods_order_status_log_inc
+-- 支付表（增量表） ods_payment_info_inc
+-- 退款表（增量表）ods_refund_payment_inc
+-- 用户表（增量表） ods_user_info_inc

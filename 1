@@ -1,0 +1,126 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<settings xmlns="http://maven.apache.org/SETTINGS/1.2.0"
+          xmlns:xsi="http://www.w3.org/2001/XMLSchema-instance"
+          xsi:schemaLocation="http://maven.apache.org/SETTINGS/1.2.0 https://maven.apache.org/xsd/settings-1.2.0.xsd">
+
+    <!-- 鏈湴浠撳簱璺緞 -->
+ <localRepository>D:\soft\software\apache-maven-3.8.3\repository</localRepository>
+
+    <!-- 鎻掍欢缁?-->
+    <pluginGroups>
+    </pluginGroups>
+
+    <!-- 浠ｇ悊璁剧疆 -->
+    <proxies>
+    </proxies>
+
+    <!-- 鏈嶅姟鍣ㄨ璇佷俊鎭?-->
+    <servers>
+    </servers>
+
+    <!-- 闀滃儚浠撳簱閰嶇疆 -->
+    <mirrors>
+        <!-- 闃块噷浜戦暅鍍?-->
+        <mirror>
+            <id>aliyun-maven</id>
+            <mirrorOf>central</mirrorOf>
+            <name>闃块噷浜?Maven 闀滃儚</name>
+            <url>https://maven.aliyun.com/nexus/content/groups/public</url>
+        </mirror>
+    </mirrors>
+
+    <!-- 閰嶇疆鐜 -->
+    <profiles>
+        <!-- JDK 1.8 閰嶇疆 -->
+        <profile>
+            <id>jdk-1.8</id>
+            <activation>
+                <activeByDefault>true</activeByDefault>
+                <jdk>1.8</jdk>
+            </activation>
+            <properties>
+                <maven.compiler.source>1.8</maven.compiler.source>
+                <maven.compiler.target>1.8</maven.compiler.target>
+                <maven.compiler.compilerVersion>1.8</maven.compiler.compilerVersion>
+            </properties>
+        </profile>
+ <localRepository>D:\soft\software\apache-maven-3.8.3\repository</localRepository>
+
+
+        <!-- 涓ぎ浠撳簱閰嶇疆 -->
+        <profile>
+            <id>central-repo</id>
+            <activation>
+                <activeByDefault>true</activeByDefault>
+            </activation>
+            <repositories>
+                <repository>
+                    <id>central</id>
+                    <name>Maven Central Repository</name>
+                    <url>https://repo.maven.apache.org/maven2</url>
+                    <layout>default</layout>
+                    <releases>
+                        <enabled>true</enabled>
+                        <updatePolicy>daily</updatePolicy>
+                    </releases>
+                    <snapshots>
+                        <enabled>false</enabled>
+                        <updatePolicy>never</updatePolicy>
+                    </snapshots>
+                </repository>
+            </repositories>
+            <pluginRepositories>
+                <pluginRepository>
+                    <id>central</id>
+                    <name>Maven Plugin Repository</name>
+                    <url>https://repo.maven.apache.org/maven2</url>
+                    <layout>default</layout>
+                    <releases>
+                        <enabled>true</enabled>
+                    </releases>
+                    <snapshots>
+                        <enabled>false</enabled>
+                    </snapshots>
+                </pluginRepository>
+            </pluginRepositories>
+        </profile>
+
+        <!-- 鑷畾涔変粨搴撻厤缃?-->
+        <profile>
+            <id>aliyun-repo</id>
+            <repositories>
+                <!-- 闃块噷浜戜粨搴?-->
+                <repository>
+                    <id>aliyun</id>
+                    <name>Aliyun Repository</name>
+                    <url>https://maven.aliyun.com/nexus/content/groups/public</url>
+                    <releases>
+                        <enabled>true</enabled>
+                    </releases>
+                    <snapshots>
+                        <enabled>false</enabled>
+                    </snapshots>
+                </repository>
+
+                <!-- Cloudera 浠撳簱 -->
+                <repository>
+                    <id>cloudera-repo</id>
+                    <name>Cloudera Repository</name>
+                    <url>https://repository.cloudera.com/artifactory/cloudera-repos</url>
+                    <releases>
+                        <enabled>true</enabled>
+                    </releases>
+                    <snapshots>
+                        <enabled>false</enabled>
+                    </snapshots>
+                </repository>
+            </repositories>
+        </profile>
+    </profiles>
+
+    <!-- 婵€娲荤殑閰嶇疆鐜 -->
+    <activeProfiles>
+        <activeProfile>central-repo</activeProfile>
+        <activeProfile>aliyun-repo</activeProfile>
+    </activeProfiles>
+</settings>
